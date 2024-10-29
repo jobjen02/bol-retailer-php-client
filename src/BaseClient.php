@@ -274,7 +274,7 @@ class BaseClient
                 'Accept' => 'application/json',
                 'Authorization' => sprintf('Basic %s', $credentials)
             ],
-            'query' => $token->toArray()
+            'form_params' => $token->toArray()
         ]);
 
         $responseTypes = [
